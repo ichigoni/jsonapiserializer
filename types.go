@@ -20,3 +20,8 @@ type JSONStruc struct {
     ID    		string      `json:"id"`
     Attributes  interface{} `json:"attributes,omitempty"`
 }
+
+// ListStruc List Structure
+type ListStruc struct {
+    Data []JSONStruc `json:"data"`
+}
