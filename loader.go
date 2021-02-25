@@ -19,7 +19,6 @@ func Serializer(v interface{}) []byte {
 	if err != nil {
 		log.Println("Structured logger: Logger JSON Marshal failed !", err.Error())
 	}
-	log.Println(string(JSON))
 
 	return []byte(string(JSON));	
 }
