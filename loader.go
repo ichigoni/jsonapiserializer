@@ -22,3 +22,9 @@ func Serializer(v interface{}) []byte {
 
 	return []byte(string(JSON));	
 }
+
+// SerializerList is Serialize a list
+func SerializerList(ls []JSONStruc) []byte {
+	list := &ListStruc{Data: ls}
+	return Serializer(list)
+}
