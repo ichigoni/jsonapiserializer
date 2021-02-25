@@ -13,3 +13,10 @@ type StructuredError struct {
 type ResponseError struct {
     Errors []StructuredError `json:"errors"`
 }
+
+// JSONStruc JSONAPI Format
+type JSONStruc struct {
+    Type  		string      `json:"type"`
+    ID    		string      `json:"id"`
+    Attributes  interface{} `json:"attributes,omitempty"`
+}
