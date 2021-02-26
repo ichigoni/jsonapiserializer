@@ -7,10 +7,10 @@ import (
 
 // Error is jsonapi serializer
 func Error(theError StructuredError) []byte {
-	e := &ResponseError{
+	resp := &ResponseError{
 		Errors: []StructuredError{theError}}
 
-	return Serializer(e)
+	return Serializer(resp)
 }
 
 // Serializer is jsonapi serializer
