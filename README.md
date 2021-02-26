@@ -59,7 +59,7 @@ import (
 // UserStruc User Structure
 type UserStruc struct {
 	FirstName	string	`json:"first-name"`
-	LastName	string	`josn:"last-name`
+	LastName	string	`json:"last-name`
 }
 
 func main() {
